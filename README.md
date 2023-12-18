@@ -12,5 +12,6 @@
 3) Установить все библиотеки
 4) Запустить main.py и проверить работу скриптов
 
-<img width="603" alt="image" src="https://github.com/Fut1le/hentai-bot/assets/43324348/b412f5c4-0b7f-4993-a1fe-6c313f2ec4bb">
 https://t.me/seductive_waifu_bot
+<img width="603" alt="image" src="https://github.com/Fut1le/hentai-bot/assets/43324348/b412f5c4-0b7f-4993-a1fe-6c313f2ec4bb">
+
