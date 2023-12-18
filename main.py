@@ -36,15 +36,19 @@ async def nsf(message: types.Message):
     asyncio.create_task(send_waifu_sfw(message))
 
         
-#nsfw mega mode ----------------------------
+#nsfw mode ---------------------------------
 
-@dp.message_handler(commands=['nsfw'])
-async def nsf(message: types.Message):
-    while True:  # Здесь вы можете задать ваше условие для выхода из цикла
+async def send_waifu_nsfw(message):
+    while True:
         response = await waifu_nsfw()
         await message.reply(f'<a href="{response}">Вайфу</a>', reply_markup=markup_request, parse_mode='HTML')
+        await asyncio.sleep(5)  # Задержка в секундах между итерациями
         
+@dp.message_handler(commands=['nsfw'])
+async def nsf(message: types.Message):
+    asyncio.create_task(send_waifu_nsfw(message))
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
+    
     
